@@ -2,7 +2,9 @@
 
 -- The user is prompted to enter the password for authentication
 -- If the table already exists, the query will not fail due to the IF NOT EXISTS clause
-CREATE TABLE IF NOT EXISTS hbtn_test_db_4.first_table (
+
+USE {{db_name}};
+CREATE TABLE IF NOT EXISTS first_table (
     id INT,
     name VARCHAR(256)
 );
