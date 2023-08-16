@@ -1,12 +1,4 @@
-#!/bin/bash
+-- This SQL script lists all databases present on the MySQL server.
 
-# MySQL server connection details
-mysql_host="localhost"
-mysql_user="root"
-mysql_password="your_password"
-
-# MySQL command to list databases
-mysql_query="SHOW DATABASES;"
-
-# Run the MySQL command and pass the password using the -p flag
-mysql -h"$mysql_host" -u"$mysql_user" -p"$mysql_password" -e"$mysql_query"
+-- Show the list of databases
+SHOW DATABASES;
