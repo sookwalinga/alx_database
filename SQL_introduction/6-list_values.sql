@@ -3,4 +3,4 @@
 -- The database name is passed as an argument to the mysql command
 -- The user is prompted to enter the password for authentication
 SELECT *
-FROM database_name.first_table;
+FROM hbtn_test_db_6.first_table;
