@@ -49,5 +49,3 @@
 10. **Subqueries:** Subqueries, also known as nested queries, are queries that are placed within another query. They allow you to retrieve data from one table and use it in another query as a condition or value.
 
 11. **Using MySQL Functions:** MySQL offers a variety of built-in functions that perform calculations, transformations, and operations on data. Examples include functions for mathematical operations, string manipulation, date handling, and more. Functions are invoked within SQL queries to modify or retrieve data in specific ways.
-
-Remember that the examples provided are simplified for clarity, and in actual practice, database management involves more complexity and considerations for performance, security, and data integrity.
