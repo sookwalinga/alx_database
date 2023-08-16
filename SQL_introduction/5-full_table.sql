@@ -4,4 +4,4 @@
 -- The query uses the information_schema database to retrieve table information without using DESCRIBE or EXPLAIN
 SELECT TABLE_NAME, CREATE_TABLE
 FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = hbtn_test_db_5 AND TABLE_NAME = 'first_table';
+WHERE TABLE_SCHEMA = hbtn_test_db_5 AND TABLE_NAME = first_table;
