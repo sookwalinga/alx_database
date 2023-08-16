@@ -1,7 +1,8 @@
--- This SQL script prints the full description of the table first_table from the specified database.
+-- 5-full_table.sql
 
--- The user is prompted to enter the password for authentication
--- The query uses the information_schema database to retrieve table information without using DESCRIBE or EXPLAIN
-SELECT TABLE_NAME, CREATE_TABLE
-FROM information_schema.TABLES
-WHERE TABLE_SCHEMA = 'hbtn_test_db_4' AND TABLE_NAME = 'first_table';
+-- Print the full table description using information_schema
+SELECT CONCAT('Table   ', table_name) AS 'Table', 
+       CONCAT('CREATE TABLE ', table_name, ' (', GROUP_CONCAT(column_name, ' ', column_type), ') ENGINE=', engine, ' DEFAULT CHARSET=', table_collation) AS 'Create Table'
+FROM information_schema.columns
+WHERE table_schema = 'hbtn_0c_0' AND table_name = 'first_table'
+GROUP BY table_name;
